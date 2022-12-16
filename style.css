@@ -1,0 +1,34 @@
+@font-face{
+    font-family: Public Sans;
+    src: url(font/publicsans.ttf);
+
+    font-family: Public Sans Bold;
+    src: url(font/publicsansbold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+}
+#mtop{
+    margin-top: 35px;
+}
+.grid_2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+}
+.grid_a{
+    font-weight: bold;
+}
+.grid_b{
+    text-align: right;
+}
