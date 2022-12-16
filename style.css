@@ -16,8 +16,8 @@
 
 body{
     font-family: 'Public Sans', sans-serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 20px;
 }
 details > summary {
   list-style: none;
@@ -36,6 +36,7 @@ details[open] summary {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
+    height: 900px;
 }
 .grid_a{
     font-weight: bold;
@@ -43,7 +44,18 @@ details[open] summary {
 .grid_b{
     text-align: right;
 }
-#circle {
+/* .pallino{
+    background-image: url(img/pallino.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+} */
+/* body img{
+    max-width: 100%;
+    height: auto;
+    filter: blur(20px);
+} */
+/* #circle {
     background: #F5FF00;
     border-radius: 50%;
     width: 1000px;
@@ -51,4 +63,4 @@ details[open] summary {
     filter: blur(30px);
     margin-left: -600px;
     margin-top: -50px;
-}
+} */
