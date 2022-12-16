@@ -16,11 +16,14 @@
 
 body{
     font-family: 'Public Sans', sans-serif;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 30px;
 }
 details > summary {
   list-style: none;
+}
+details:hover{
+    cursor: pointer;
 }
 details[open] summary {
   font-weight: bold;
