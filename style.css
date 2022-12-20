@@ -16,11 +16,23 @@
 
 body{
     font-family: 'Public Sans', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 16px;
+    /* line-height: 20px; */
 }
+body a{
+    text-decoration: none;
+    color: black;
+}
+body a:hover{
+    text-decoration: underline;
+}
+/* body a:visited{
+    text-decoration: none;
+    color: grey;
+} */
 details > summary {
   list-style: none;
+  text-decoration: underline;
 }
 details:hover{
     cursor: pointer;
@@ -39,21 +51,21 @@ details[open] summary {
     height: 900px;
 }
 .grid_a{
-    font-weight: bold;
+    font-weight: 600;
 }
 .grid_b{
     text-align: right;
 }
-/* .pallino{
-    background-image: url(img/pallino.png);
+.pallino{
+    background-image: url(img/pallinoo.png);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom;
-} */
-/* body img{
+}
+/* img{
     max-width: 100%;
-    height: auto;
     filter: blur(20px);
+    height:fit-content
 } */
 /* #circle {
     background: #F5FF00;
