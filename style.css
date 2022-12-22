@@ -44,6 +44,9 @@ details[open] summary {
 #mtop{
     margin-top: 35px;
 }
+#mtop1{
+    margin-top: 35px;
+}
 .grid_2{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,7 +56,7 @@ details[open] summary {
 .grid_a{
     font-weight: 600;
 }
-.grid_b{
+.grid_b, .grid_c{
     text-align: right;
 }
 .pallino{
@@ -61,6 +64,10 @@ details[open] summary {
     background-repeat: no-repeat;
     background-size:cover;
     background-position: bottom;
+}
+.grid_c{
+    grid-column: 2;
+    margin-top: -250px;
 }
 /* img{
     max-width: 100%;
@@ -76,3 +83,27 @@ details[open] summary {
     margin-left: -600px;
     margin-top: -50px;
 } */
+
+@media (min-width:900px){
+    .grid_2{
+        padding: 60px;
+    }
+    body{
+        font-size: 14px;
+    }
+}
+@media (min-width:1200px){
+    #mtop1{
+        margin-top: 200px;
+    }
+    .grid_2{
+        grid-template-columns:repeat(9, 1fr)
+    }
+    .grid_b{
+        grid-column: 3;
+    }
+    .grid_c{
+        grid-column: 8;
+        margin-top: 0px;
+    }
+}
