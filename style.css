@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: Public Sans;
     src: url(font/publicsans.ttf);
 
@@ -14,62 +14,81 @@
     box-sizing: border-box;
 }
 
-body{
+.grey {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+body {
     font-family: 'Public Sans', sans-serif;
     font-size: 16px;
     /* line-height: 20px; */
 }
-body a{
+
+body a {
     text-decoration: none;
     color: black;
 }
-body a:hover{
+
+body a:hover {
     text-decoration: underline;
 }
+
 /* body a:visited{
     text-decoration: none;
     color: grey;
 } */
 
-details > summary {
-  list-style: none;
-  text-decoration: underline;
+details>summary {
+    list-style: none;
+    text-decoration: underline;
 }
-details:hover{
+
+details:hover {
     cursor: pointer;
 }
+
 details[open] summary {
-  font-weight: bold;
-  text-decoration: underline;
+    font-weight: bold;
+    text-decoration: underline;
 }
-#mtop{
+
+#mtop {
     margin-top: 35px;
 }
-#mtop1{
+
+#mtop1 {
     margin-top: 35px;
 }
-.grid_2{
+
+.grid_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
     height: 900px;
 }
-.grid_a{
+
+.grid_a {
     font-weight: 600;
 }
-.grid_b, .grid_c{
+
+/* .grid_b, .grid_c{
     text-align: right;
+} */
+.grid_c {
+    grid-column: 2;
+    margin-top: -100px;
 }
-.pallino{
+
+.pallino {
     background-image: url(img/pallinoo.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: bottom;
 }
-.grid_c{
-    grid-column: 2;
-    margin-top: -250px;
+.about{
+    display: none;
 }
+
 /* img{
     max-width: 100%;
     filter: blur(20px);
@@ -85,26 +104,50 @@ details[open] summary {
     margin-top: -50px;
 } */
 
-@media (min-width:900px){
-    .grid_2{
+
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width:900px) {
+    .grid_2 {
         padding: 60px;
     }
-    body{
+
+    body {
         font-size: 14px;
     }
+
 }
-@media (min-width:1200px){
-    #mtop1{
+
+@media (min-width:1100px) {
+    #mtop1 {
         margin-top: 200px;
     }
-    .grid_2{
-        grid-template-columns:repeat(9, 1fr)
+
+    .grid_2 {
+        grid-template-columns: repeat(9, 1fr)
     }
-    .grid_b{
+
+    .grid_b {
         grid-column: 3;
     }
-    .grid_c{
+
+    .grid_c {
         grid-column: 8;
         margin-top: 0px;
+    }
+    .grid_b,
+    .grid_c {
+        text-align: right;
+    }
+    .about_m{
+        display: none;
+    }
+    .about{
+        display: block;
+        grid-column: 4 / 7;
+        margin-top: 85px;
+        margin-left: 5px;
     }
 }
