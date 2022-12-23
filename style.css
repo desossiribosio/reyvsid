@@ -88,6 +88,27 @@ details[open] summary {
 .about{
     display: none;
 }
+/* ///////////////// PAGINA PROGETTO ////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* .faded{
+    background-color: rgba(0, 0, 0, 0.05);
+} */
+article{
+    font-weight: 700;
+}
+.works{
+    grid-column: 1 / 3;
+}
+.img{
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.ordine{
+    /* margin-top: 10px; */
+    grid-column: 1 / 3;
+    justify-self: center;
+    justify-items: center;
+}
 
 /* img{
     max-width: 100%;
@@ -149,5 +170,16 @@ details[open] summary {
         grid-column: 4 / 7;
         margin-top: 85px;
         margin-left: 5px;
+    }
+    /* ///////////////// PAGINA PROGETTO ////////////////////// */
+    /* //////////////////////////////////////////////////////// */
+    .works{
+        grid-column:2 / 5;
+    }
+    .ordine{
+        grid-column: 6 / 10;
+    }
+    .img{
+        width: 500px;
     }
 }
