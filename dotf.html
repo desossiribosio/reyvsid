@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="REY">
     <meta name="description" content="Progetto Web Coding">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylet.css">
     <title>WORKS - reyvsid</title>
 </head>
 
@@ -18,7 +18,7 @@
                 <p><a href="index.html" style="
                     color: rgba(0, 0, 0, 0.4);"">Home</a></p>
             </div>
-            <div class=" works fix">
+            <div class="works fix">
                         <p><a href="works.html" style="font-weight: 700; color: rgba(0, 0, 0, 0.4);">Works</a></p>
                         <h3 class="works" id="mtop">2 Dot</h3>
                         <p>
@@ -34,32 +34,40 @@
                         </p>
             </div>
 
-            <div class="slider">
-
-
-
-                <div class="slides">
-                    <div id="slide-1">
-                        <img class="imgtest" src="img/d1.jpg" alt="Dot">
-                    </div>
-                    <div id="slide-2">
-                        <img class="imgtest" src="img/d1.jpg" alt="Dot">
-                    </div>
-                    <div id="slide-3">
-                        <img class="imgtest" src="img/d1.jpg" alt="Dot">
-                    </div>
-                    <div id="slide-4">
-                        <img class="imgtest" src="img/d1.jpg" alt="Dot">
-                    </div>
-                    <div id="slide-5">
-                        <img class="imgtest" src="img/d1.jpg" alt="Dot">
+            <div class="ordine">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                        <div class="carousel-item">
+                            <img src="img/d1.jpg" alt="dot">
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="img/d1.jpg" alt="dot">
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="img/d1.jpg" alt="dot">
+                        </div>
+                        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                        <label for="carousel-2" class="carousel-control next control-1">›</label>
+                        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                        <label for="carousel-3" class="carousel-control next control-2">›</label>
+                        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                        <label for="carousel-1" class="carousel-control next control-3">›</label>
+                        <ol class="carousel-indicators">
+                            <li>
+                                <label for="carousel-1" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-2" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-3" class="carousel-bullet">•</label>
+                            </li>
+                        </ol>
                     </div>
                 </div>
-                <a href="#slide-1">1</a>
-                <a href="#slide-2">2</a>
-                <a href="#slide-3">3</a>
-                <a href="#slide-4">4</a>
-                <a href="#slide-5">5</a>
             </div>
         </div>
     </div>
