@@ -5,7 +5,7 @@
     font-family: Public Sans Bold;
     src: url(font/publicsansbold.ttf);
 }
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +14,7 @@
     box-sizing: border-box;
 }
 
+/* SPECIFICO */
 .grey {
     color: rgba(0, 0, 0, 0.4);
 }
@@ -21,7 +22,16 @@
 .bold {
     font-weight: 700;
 }
+#mtop {
+    margin-top: 35px;
+}
 
+#mtop1 {
+    margin-top: 35px;
+}
+
+
+/* BODY */
 body {
     font-family: 'Public Sans', sans-serif;
     font-size: 16px;
@@ -37,14 +47,8 @@ body a:hover {
     text-decoration: underline;
 }
 
-#mtop {
-    margin-top: 35px;
-}
 
-#mtop1 {
-    margin-top: 35px;
-}
-
+/* GRIGLIA ELEMENTI */
 .grid_2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -61,6 +65,7 @@ body a:hover {
     margin-top: -100px;
 }
 
+/* SFONDO */
 .pallino {
     background-image: url(img/pallinoo.png);
     background-repeat: no-repeat;
@@ -68,15 +73,13 @@ body a:hover {
     background-position: bottom;
 }
 
+/* NASCONDI */
 .about {
     display: none;
 }
 
 /* ///////////////// PAGINA PROGETTO ////////////////////// */
 /* //////////////////////////////////////////////////////// */
-/* .faded{
-    background-color: rgba(0, 0, 0, 0.05);
-} */
 h3 {
     margin-bottom: 8px;
 }
@@ -107,10 +110,14 @@ article {
     justify-items: center;
 }
 
+/* FOOTER */
+footer{
+    margin-top: -30px;
+}
+
 .footer {
     background-color: black;
     color: white;
-    margin-top: -3vw;
     padding: 20px 35px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,13 +129,13 @@ article {
     font-style: italic;
 }
 
+/* PAGINA PROBLEMI */
 .scroll {
-    margin: 4px, 4px;
-    padding: 4px;
-    height: 700px;
+    height: 600px;
     overflow-x: hidden;
     overflow-y: auto;
-    text-align: justify;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 /* //////////////////////////////////////////////////////////////////////////// */
@@ -210,6 +217,8 @@ article {
     display: block;
 }
 
+
+/* PALLINI NASCOSTI - INDICATORI */
 /* .carousel-indicators {
     list-style: none;
     margin: 0;
@@ -245,19 +254,6 @@ article {
 #carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
     color: #428bca;
 } */
-
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
 
 /* //////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////// */
@@ -310,6 +306,10 @@ article {
         text-align: right;
     }
 
+    .about_m{
+        display: none;
+    }
+
     .about {
         display: block;
         grid-column: 4 / 7;
@@ -335,13 +335,8 @@ article {
     .img2 {
         width: 600px;
     }
-
-    /* ///////////////////// TEST //////////////////// */
-    /* .fix{
-        position: fixed;
-    } */
-    .slider {
-        grid-column: 6 / 10;
-
+    .scroll{
+        height: 700px;
+        font-size: 2rem;
     }
 }
