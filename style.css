@@ -53,7 +53,7 @@ body a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 30px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .grid_a {
@@ -71,6 +71,7 @@ body a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    height: 900px;
 }
 
 /* NASCONDI */
@@ -103,6 +104,7 @@ article {
 }
 .video{
     width: 400px;
+    padding: 20px;
 }
 
 .ordine {
@@ -272,6 +274,9 @@ footer{
 
 
 @media (min-width:900px) {
+    .pallino{
+        height: 950px;
+    }
     .grid_2 {
         padding: 60px;
     }
