@@ -101,6 +101,9 @@ article {
     width: 450px;
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
+.video{
+    width: 400px;
+}
 
 .ordine {
     /* margin-top: 10px; */
@@ -280,6 +283,9 @@ footer{
     .works {
         margin-top: -40px;
     }
+    .video{
+        width: 500px;
+    }
 }
 
 @media (min-width:1100px) {
@@ -315,15 +321,14 @@ footer{
         margin-top: 85px;
         margin-left: 5px;
     }
-    .works{
-        margin-right: 10px;
-    }
+
 
     /* ///////////////// PAGINA PROGETTO ////////////////////// */
     /* //////////////////////////////////////////////////////// */
     .works {
         grid-column: 2 / 5;
         margin-top: 0px;
+        margin-right: 10px;
     }
 
     .ordine {
@@ -335,6 +340,9 @@ footer{
     }
 
     .img2 {
+        width: 600px;
+    }
+    .video{
         width: 600px;
     }
     .scroll{
